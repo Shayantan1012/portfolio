@@ -20,8 +20,8 @@ Open the local URL printed by Vite. Create a production build with `npm.cmd run 
 - `public/Shayantan-Biswas-Resume.pdf`: downloadable résumé.
 - `index.html`: title and search metadata.
 
-Features include project category filters, accessible project dialogs, a mobile navigation menu, saved light/dark preference, email copying, and direct repository and certificate links. The contact button opens Gmail compose in a new tab with the recipient filled in. Visitors may need to sign in to Gmail; they write and send the message themselves.
+Features include project category filters, accessible project dialogs, a mobile navigation menu, saved light/dark preference, and direct repository and certificate links. The navigation offers a résumé download, and the closing section links to GitHub and the résumé. The hero email icon and the visible footer contact address open Gmail compose in a new tab with the recipient filled in. The footer also offers a copy-email button with feedback.
 
 The Google Fonts stylesheet is optional; local system fonts provide a fallback if it is unavailable.
 
-Certificate names, issuers, and available dates were taken from the public LinkedIn profile listing. LinkedIn does not expose direct credential files in the available listing, so its three cards link to the profile rather than claiming to open a certificate file. The full-stack course preserves the July 2024 expiry shown on LinkedIn. The two research certificates use the existing Google Drive URLs supplied in the résumé.
+Certificate names, issuers, and available dates were taken from the public LinkedIn profile listing. The Decode DSA with C++, Decode Full Stack Web Dev 1.0, and IEEE cards open Google Drive certificate links supplied by the user. The full-stack course preserves the July 2024 expiry shown on LinkedIn. The IIT Guwahati and Jadavpur University research certificates use the Google Drive URLs supplied in the résumé; the IIT Hyderabad certificate uses the Google Drive URL supplied directly by the user. Research certificate cards and internship links share the same source data.

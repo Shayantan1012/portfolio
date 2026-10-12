@@ -8,6 +8,7 @@ const linkedinCertificates = [
     issuer: 'PW Skills',
     issued: 'Issued December 2023',
     category: 'Data structures & algorithms',
+    url: 'https://drive.google.com/file/d/1Z6HaqV4HHw6UHEaXdUTF1jp9MfGQoKRX/view?usp=sharing',
   },
   {
     name: 'Decode Full Stack Web Dev 1.0',
@@ -15,11 +16,14 @@ const linkedinCertificates = [
     issued: 'Issued May 2024',
     expiry: 'Expiry listed: July 2024',
     category: 'Full-stack development',
+    url: 'https://drive.google.com/file/d/1TXebaP5S7-fFDbLyhti826A6LK-lkcNu/view?usp=sharing',
   },
   {
     name: 'IEEE Student Branch NIT DGP',
     issuer: 'IEEE Student Branch NIT Durgapur',
     category: 'IEEE student community',
+    url: 'https://drive.google.com/file/d/1vyDP5sGs-4lZdSbzflkI_M8D60-QM90v/view?usp=sharing',
+    label: 'IEEE certificate',
   },
 ];
 
@@ -40,7 +44,7 @@ export default function Certificates({ linkedinUrl, researchCertificates }) {
     </div>
     <div className="certificate-grid">
       {linkedinCertificates.map(certificate => <article className="certificate-card" key={certificate.name}>
-        <div className="certificate-card-top"><span className="certificate-icon"><Award size={25} aria-hidden="true" /></span><span className="certificate-source"><Linkedin size={13} aria-hidden="true" /> Listed on LinkedIn</span></div>
+        <div className="certificate-card-top"><span className="certificate-icon"><Award size={25} aria-hidden="true" /></span><span className="certificate-source">{certificate.url ? <><FileText size={13} aria-hidden="true" /> {certificate.label || 'Course certificate'}</> : <><Linkedin size={13} aria-hidden="true" /> Listed on LinkedIn</>}</span></div>
         <p className="certificate-category">{certificate.category}</p>
         <h3>{certificate.name}</h3>
         <p className="certificate-issuer">{certificate.issuer}</p>
@@ -48,7 +52,7 @@ export default function Certificates({ linkedinUrl, researchCertificates }) {
           {certificate.issued && <p>{certificate.issued}</p>}
           {certificate.expiry && <p>{certificate.expiry}</p>}
         </div>}
-        <CertificateLink href={linkedinUrl}>View on LinkedIn</CertificateLink>
+        <CertificateLink href={certificate.url || linkedinUrl}>{certificate.url ? 'View certificate' : 'View on LinkedIn'}</CertificateLink>
       </article>)}
     </div>
     <h3 className="research-certificates-heading">Research completion certificates</h3>
