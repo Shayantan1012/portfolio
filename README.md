@@ -20,7 +20,7 @@ Open the local URL printed by Vite. Create a production build with `npm.cmd run 
 - `public/Shayantan-Biswas-Resume.pdf`: downloadable résumé.
 - `index.html`: title and search metadata.
 
-Features include project category filters, accessible project dialogs, a mobile navigation menu, saved light/dark preference, and direct repository and certificate links. The navigation offers a résumé download, and the closing section links to GitHub and the résumé. The hero email icon and the visible footer contact address open Gmail compose in a new tab with the recipient filled in. The footer also offers a copy-email button with feedback.
+Features include project category filters, accessible project dialogs, a mobile navigation menu, saved light/dark preference, and direct repository and certificate links. The navigation offers a résumé download, and the closing section links to GitHub and the résumé. The hero social links show GitHub and LinkedIn. The visible footer contact address opens Gmail compose in a new tab with the recipient filled in. The footer also offers a copy-email button with feedback.
 
 The Google Fonts stylesheet is optional; local system fonts provide a fallback if it is unavailable.
 
