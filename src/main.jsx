@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import { createRoot } from 'react-dom/client';
 import { ArrowUpRight, ArrowDown, ArrowRight, Github, Linkedin, Mail, Download, Menu, X, Code2, BrainCircuit, Layers, Terminal, Sparkles, Check, Copy, Sun, Moon, Leaf, ChevronRight, ExternalLink } from 'lucide-react';
 import './styles.css';
+import './typography.css';
 
 const links = {
   github: 'https://github.com/Shayantan1012',

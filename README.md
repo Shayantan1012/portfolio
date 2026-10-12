@@ -15,6 +15,7 @@ Open the local URL printed by Vite. Create a production build with `npm.cmd run 
 
 - `src/main.jsx`: biography, projects, research, skills, and links.
 - `src/styles.css`: responsive design, colors, typography, and dark theme.
+- `src/typography.css`: readable text sizes, text contrast, and responsive typography.
 - `public/Shayantan-Biswas-Resume.pdf`: downloadable résumé.
 - `index.html`: title and search metadata.
 
