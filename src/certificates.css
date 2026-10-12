@@ -1,0 +1,21 @@
+.certificate-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+.certificate-card{display:flex;flex-direction:column;padding:28px;background:var(--surface);border:1px solid var(--line);border-radius:10px;transition:border-color .2s,transform .2s}
+.certificate-card:hover{border-color:#96a18e;transform:translateY(-3px)}
+.certificate-card-top{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:25px}
+.certificate-icon{display:flex;padding:12px;border-radius:9px;background:var(--soft);color:#6b805b}
+.certificate-source{display:flex;align-items:center;gap:6px;font-size:12px;line-height:1.6;color:var(--muted)}
+.certificate-category{font-size:12px;color:var(--muted);margin-bottom:10px}
+.certificate-card h3{font-size:22px;line-height:1.4;letter-spacing:-.6px;overflow-wrap:anywhere}
+.certificate-issuer{font-size:15px;line-height:1.7;color:var(--muted);margin-top:13px;margin-bottom:20px}
+.certificate-dates{font-size:13px;line-height:1.8;color:var(--muted);margin-bottom:24px}
+.certificate-link{display:flex;align-items:center;justify-content:space-between;gap:15px;font-size:14px;font-weight:600;border-top:1px solid var(--line);padding-top:18px;margin-top:auto}
+.certificate-link:hover{color:var(--orange)}
+.research-certificates-heading{font-size:23px;margin-top:43px;margin-bottom:22px}
+.research-certificate-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+.certificate-research-field{font-size:14px;line-height:1.7;color:var(--muted);margin-top:8px}
+.research-certificate-card .certificate-card-top{margin-bottom:19px}
+.research-certificate-card .certificate-issuer{margin-bottom:0}
+.research-certificate-card .certificate-dates{margin-top:17px}
+@media(max-width:1100px){.certificate-grid{gap:18px}.certificate-card{padding:23px}.certificate-card-top{align-items:flex-start;flex-wrap:wrap}.certificate-card h3{font-size:21px}}
+@media(max-width:820px){.certificate-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.certificate-card h3{font-size:22px}.certificates-section .section-heading{flex-wrap:wrap}.certificates-section .text-link{white-space:normal}}
+@media(max-width:600px){.certificate-grid{grid-template-columns:1fr;gap:18px}.certificate-card{padding:25px}.certificate-card-top{align-items:center;flex-wrap:nowrap}.research-certificates-heading{font-size:21px;margin-top:32px}.certificate-card h3{font-size:22px}.certificates-section .section-heading .text-link{margin-top:18px}.certificate-source{font-size:12px}}
