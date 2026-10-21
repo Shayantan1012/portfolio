@@ -8,7 +8,7 @@ import Certificates from './Certificates';
 const links = {
   github: 'https://github.com/Shayantan1012',
   linkedin: 'https://www.linkedin.com/in/shayantan-biswas-058746292/',
-  email: 'shayantanbiswas137@gmail.com',
+  email: 'shayantanbiswas137work@gmail.com',
 };
 const gmailComposeUrl = 'https://mail.google.com/mail/?' + new URLSearchParams({
   view: 'cm',
